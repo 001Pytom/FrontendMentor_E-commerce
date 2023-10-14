@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerce</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body class="font-kumbh ">
+    <div class="">
+        <!-- nav-bar -->
+
+        <nav class="container cursor-pointer">
+
+            <!-- mobile -->
+            <div
+                class="menu-items-mobile container absolute left-0   w-3/4  h-screen flex flex-col bg-white lg:hidden items-start space-y-12 p-9  z-10 hidden">
+                <img id="menu-close" src="images/icon-close.svg" alt="icon-close" class=" w-3 ">
+
+                <div class="flex flex-col gap-7 font-bold">
+                    <a href="">
+                        <li class="list-none">Collections</li>
+                    </a>
+                    <a href="">
+                        <li class="list-none">Men</li>
+                    </a>
+                    <a href="">
+                        <li class="list-none">Women</li>
+                    </a>
+                    <a href="">
+                        <li class="list-none">About</li>
+                    </a>
+                    <a href="">
+                        <li class="list-none">Contacts</li>
+                    </a>
+                </div>
+            </div>
+            <!-- mobile -->
+
+            <div class="  w-[80%]  mx-auto flex justify-between   items-center lg:py-7 lg:border-b-2 py-3  ">
+                <div class="flex items-center justify-center gap-4 lg:hidden">
+                    <img id="menu-toggle" src="images/icon-menu.svg" alt="Menu" class="">
+                    <div class=" text-3xl font-bold tracking-normal inline-block">Sneakers</div>
+                </div>
+                <div class=" flex justify-between items-center lg:space-x-12 ">
+                    <div class="text-3xl font-bold tracking-normal hidden lg:flex ">Sneakers</div>
+
+                    <!-- desktop -->
+                    <div class="hidden lg:flex  lg:items-center lg:space-x-10">
+                        <a href=""
+                            class="hover:underline underline-offset-[44px] decoration-orangeRed decoration-[4px] transition-all ">
+                            <li class="list-none ">Collections</li>
+                        </a>
+                        <a href=""
+                            class="hover:underline underline-offset-[44px] decoration-orangeRed decoration-[4px] transition-all">
+                            <li class="list-none">Men</li>
+                        </a>
+                        <a href=""
+                            class="hover:underline underline-offset-[44px] decoration-orangeRed decoration-[4px] transition-all">
+                            <li class="list-none">Women</li>
+                        </a>
+                        <a href=""
+                            class="hover:underline underline-offset-[44px] decoration-orangeRed decoration-[4px] transition-all">
+                            <li class="list-none">About</li>
+                        </a>
+                        <a href=""
+                            class="hover:underline underline-offset-[44px] decoration-orangeRed decoration-[4px] transition-all">
+                            <li class="list-none">Contacts</li>
+                        </a>
+                    </div>
+                    <!-- desktop -->
+                </div>
+
+
+                <div class=" flex lg:gap-10 gap-5   items-center justify-center relative">
+                    <!-- open basket -->
+                    <div
+                        class=" cart-basket absolute bg-white w-[360px]  p-8 flex-col justify-end items-start z-10 top-14   -right-7 rounded-xl space-y-8  hidden">
+                        <div class="flex items-start justify-start h-[5vh] w-full  z-10 cartStyle  font-bold">Cart</div>
+
+                        <div class="flex items-center justify-between w-full">
+                            <img src="./images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail"
+                                class="w-12 h-12">
+                            <div class=" flex flex-col">
+                                <p class="">Fall Limited Edition Sneakers</p>
+                                <div class="flex  items-center gap-2">
+                                    <p>$125.00</p>
+                                    <p>x</p>
+                                    <p class="font-bold">$375.00</p>
+
+                                </div>
+                            </div>
+                            <div><img src="./images/icon-delete.svg" alt=""></div>
+                        </div>
+                        <div
+                            class="cartIncrease flex items-center justify-evenly gap-3 my-shadow  text-white font-bold cursor-pointer hover:bg-orange-300 w-full">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16"
+                                fill="none">
+                                <g clip-path="url(#clip0_205_118)">
+                                    <path
+                                        d="M16.1695 3.08621H2.98525L2.78975 0.903251C2.7743 0.73094 2.69491 0.570655 2.56719 0.453954C2.43948 0.337253 2.27271 0.272594 2.0997 0.272705H0.69334C0.509714 0.272705 0.333609 0.34565 0.203765 0.475494C0.0739218 0.605337 0.000976563 0.781443 0.000976562 0.965069C0.000976563 1.1487 0.0739218 1.3248 0.203765 1.45464C0.333609 1.58449 0.509714 1.65743 0.69334 1.65743H1.46607L2.26275 10.5307C2.31916 11.1705 2.66457 11.8644 3.26034 12.3358C2.18702 13.7066 3.16761 15.7273 4.91398 15.7273C6.36284 15.7273 7.38438 14.2823 6.88752 12.913H10.6777C10.1817 14.2807 11.2009 15.7273 12.6521 15.7273C13.2087 15.7266 13.7424 15.5052 14.136 15.1116C14.5296 14.718 14.751 14.1844 14.7516 13.6278C14.751 13.0711 14.5296 12.5375 14.136 12.1439C13.7424 11.7503 13.2087 11.5289 12.6521 11.5283H4.91861C4.39239 11.5283 3.93416 11.2114 3.73634 10.7486L14.8026 10.0979C14.9498 10.0893 15.0904 10.034 15.204 9.93986C15.3175 9.84577 15.3981 9.71786 15.4339 9.5748L16.841 3.94702C16.8665 3.84488 16.8684 3.73827 16.8465 3.6353C16.8246 3.53232 16.7796 3.43568 16.7148 3.35271C16.65 3.26974 16.5671 3.20262 16.4725 3.15645C16.3779 3.11027 16.274 3.08625 16.1687 3.08621H16.1695ZM4.9132 14.3425C4.72938 14.334 4.55592 14.2549 4.42886 14.1218C4.3018 13.9887 4.2309 13.8118 4.2309 13.6278C4.2309 13.4437 4.3018 13.2668 4.42886 13.1337C4.55592 13.0006 4.72938 12.9215 4.9132 12.913C5.09702 12.9215 5.27048 13.0006 5.39755 13.1337C5.52461 13.2668 5.5955 13.4437 5.5955 13.6278C5.5955 13.8118 5.52461 13.9887 5.39755 14.1218C5.27048 14.2549 5.09702 14.334 4.9132 14.3425ZM12.6521 14.3425C12.4682 14.334 12.2948 14.2549 12.1677 14.1218C12.0407 13.9887 11.9698 13.8118 11.9698 13.6278C11.9698 13.4437 12.0407 13.2668 12.1677 13.1337C12.2948 13.0006 12.4682 12.9215 12.6521 12.913C12.8359 12.9215 13.0093 13.0006 13.1364 13.1337C13.2635 13.2668 13.3344 13.4437 13.3344 13.6278C13.3344 13.8118 13.2635 13.9887 13.1364 14.1218C13.0093 14.2549 12.8359 14.334 12.6521 14.3425ZM14.2137 8.74566L3.55011 9.37157L3.10966 4.47171H15.2824L14.2137 8.74489V8.74566Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_205_118">
+                                        <rect width="17" height="15.4545" fill="white"
+                                            transform="translate(0 0.272705)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+
+
+                            <h4 class="">Add to cart</h4>
+                        </div>
+                    </div>
+                    <img onclick="openCart()" src="images/icon-cart.svg" alt="cart" class="w-5 h-5">
+                    <div class="lg:w-12 lg:h-12 w-7 h-7 rounded-[117px]  lg:border border-1 border-orangeRed"><img
+                            src="images/image-avatar.png" alt=""></div>
+                </div>
+                <!-- open basket -->
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class="hero container w-full flex  flex-col lg:flex-row justify-evenly items-center mx-auto   lg:pt-7">
+            <div class=" flex lg:flex-col justify-center items-center gap-7  lg:w-[447px] lg:h-[567px]  cursor-pointer">
+                <div class=" container  lg:h-[27rem] lg:w-[27rem]  relative ">
+
+                    <!-- next and prev -->
+                    <div class="flex absolute items-center justify-between w-full h-full p-5 lg:hidden">
+                        <div class=" flex items-center justify-center h-10 w-10 bg-white rounded-3xl "> <i
+                                class="fa fa-chevron-left hover:text-orangeRed" aria-hidden="true"></i>
+                        </div>
+                        <div class=" flex items-center justify-center h-10 w-10 bg-white rounded-3xl "> <i
+                                class="fa fa-chevron-right hover:text-orangeRed" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <!-- prev and next -->
+
+                    <!-- images -->
+                    <div class="gallery">
+                        <div id="img1" class="image "> <img class=" rounded-2xl" src="./images/image-product-1.jpg"
+                                alt="image-product-1">
+                        </div>
+                        <div id="img2" class="image hidden"><img class="rounded-2xl " src="./images/image-product-2.jpg"
+                                alt="image-product-2"></div>
+                        <div class="image hidden"> <img class=" rounded-2xl " src="./images/image-product-3.jpg"
+                                alt="image-product-3"></div>
+                        <div class="image"> <img class="rounded-2xl hidden" src="./images/image-product-4.jpg"
+                                alt="image-product-4"></div>
+                    </div>
+                </div>
+                <!-- thumbnails -->
+                <div class="images hidden lg:flex items-center justify-between gap-7">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail"
+                        class="w-[5.7rem] h-[5.7rem] rounded-xl border-2 border-[#FF7D1A] hover:opacity-30">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail"
+                        class="w-[5.7rem]  h-[5.7rem] rounded-xl border-2 border-[#FF7D1A] hover:opacity-50">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail"
+                        class="w-[5.7rem]  h-[5.7rem] rounded-xl border-2 border-[#FF7D1A] hover:opacity-50">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail"
+                        class="w-[5.7rem]  h-[5.7rem] rounded-xl border-2 border-[#FF7D1A] hover:opacity-50">
+                </div>
+            </div>
+
+            <!-- contents for hero -->
+            <div
+                class="content container lg:max-w-[27rem]  flex flex-col justify-between items-start gap-4 lg:gap-8 p-6 lg:p-0 ">
+                <div class="texts space-y-3 lg:space-y-7">
+                    <p class="text-orangeRed text-sm font-bold tracking-wider">SNEAKER COMPANY</p>
+                    <h3 class=" text-3xl md:text-4xl lg:text-5xl font-bold text-veryDarkBlue lg:leading-[3rem]">Fall
+                        Limited
+                        <br class="hidden lg:block"> Edition
+                        Sneakers
+                    </h3>
+                    <p class=" text-base  text-left text-grayishBlue font-medium max-w-[28rem]">These low-profile
+                        sneakers
+                        are
+                        your perfect casual wear
+                        companion. Featuring a durable rubber outer sole, they’ll
+                        withstand everything the weather can offer.</p>
+
+                    <div class="space-y-3 flex   items-center justify-between lg:block">
+                        <div class=" flex items-center gap-6 ">
+                            <h4 class="text-3xl font-bold text-veryDarkBlue">$125.00</h4>
+                            <div
+                                class="percent w-[51px] h-[27px] rounded-md bg-pleOrange text-orangeRed font-bold text-base text-center flex items-center justify-center">
+                                50%</div>
+                        </div>
+                        <div class="font-bold text-base text-gray-300 lg:text-veryDarkBlue line-through ">$250.00</div>
+                    </div>
+                </div>
+
+
+                <div class=" flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4  w-full ">
+
+                    <div
+                        class="signs py-4 px-4 flex items-center justify-between  space-x-11 bg-veryGrayishBlue rounded-[10px] ">
+                        <img src="./images/icon-minus.svg" alt="minus" class="minus">
+                        <h3 class="font-bold text-base">3</h3>
+                        <img src="./images/icon-plus.svg" alt="plus" class="plus">
+
+                    </div>
+                    <div
+                        class="cartIncrease flex items-center justify-evenly gap-3 my-shadow  text-white font-bold cursor-pointer hover:bg-orange-300">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <g clip-path="url(#clip0_205_118)">
+                                <path
+                                    d="M16.1695 3.08621H2.98525L2.78975 0.903251C2.7743 0.73094 2.69491 0.570655 2.56719 0.453954C2.43948 0.337253 2.27271 0.272594 2.0997 0.272705H0.69334C0.509714 0.272705 0.333609 0.34565 0.203765 0.475494C0.0739218 0.605337 0.000976563 0.781443 0.000976562 0.965069C0.000976563 1.1487 0.0739218 1.3248 0.203765 1.45464C0.333609 1.58449 0.509714 1.65743 0.69334 1.65743H1.46607L2.26275 10.5307C2.31916 11.1705 2.66457 11.8644 3.26034 12.3358C2.18702 13.7066 3.16761 15.7273 4.91398 15.7273C6.36284 15.7273 7.38438 14.2823 6.88752 12.913H10.6777C10.1817 14.2807 11.2009 15.7273 12.6521 15.7273C13.2087 15.7266 13.7424 15.5052 14.136 15.1116C14.5296 14.718 14.751 14.1844 14.7516 13.6278C14.751 13.0711 14.5296 12.5375 14.136 12.1439C13.7424 11.7503 13.2087 11.5289 12.6521 11.5283H4.91861C4.39239 11.5283 3.93416 11.2114 3.73634 10.7486L14.8026 10.0979C14.9498 10.0893 15.0904 10.034 15.204 9.93986C15.3175 9.84577 15.3981 9.71786 15.4339 9.5748L16.841 3.94702C16.8665 3.84488 16.8684 3.73827 16.8465 3.6353C16.8246 3.53232 16.7796 3.43568 16.7148 3.35271C16.65 3.26974 16.5671 3.20262 16.4725 3.15645C16.3779 3.11027 16.274 3.08625 16.1687 3.08621H16.1695ZM4.9132 14.3425C4.72938 14.334 4.55592 14.2549 4.42886 14.1218C4.3018 13.9887 4.2309 13.8118 4.2309 13.6278C4.2309 13.4437 4.3018 13.2668 4.42886 13.1337C4.55592 13.0006 4.72938 12.9215 4.9132 12.913C5.09702 12.9215 5.27048 13.0006 5.39755 13.1337C5.52461 13.2668 5.5955 13.4437 5.5955 13.6278C5.5955 13.8118 5.52461 13.9887 5.39755 14.1218C5.27048 14.2549 5.09702 14.334 4.9132 14.3425ZM12.6521 14.3425C12.4682 14.334 12.2948 14.2549 12.1677 14.1218C12.0407 13.9887 11.9698 13.8118 11.9698 13.6278C11.9698 13.4437 12.0407 13.2668 12.1677 13.1337C12.2948 13.0006 12.4682 12.9215 12.6521 12.913C12.8359 12.9215 13.0093 13.0006 13.1364 13.1337C13.2635 13.2668 13.3344 13.4437 13.3344 13.6278C13.3344 13.8118 13.2635 13.9887 13.1364 14.1218C13.0093 14.2549 12.8359 14.334 12.6521 14.3425ZM14.2137 8.74566L3.55011 9.37157L3.10966 4.47171H15.2824L14.2137 8.74489V8.74566Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_205_118">
+                                    <rect width="17" height="15.4545" fill="white" transform="translate(0 0.272705)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <h4 class="">Add to cart</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- light-box -->
+        <div
+            class="preview-box h-screen w-full container bg-black bg-opacity-80  absolute inset-0 z-50 hidden   items-center justify-center mx-auto">
+
+            <div class=" flex flex-col justify-center items-center gap-7  cursor-pointer ">
+                <!-- close-icon -->
+                <i class="fa fa-times text-white close-icon self-end  px-4  hover:text-orangeRed"
+                    aria-hidden="true"></i>
+
+
+                <!-- images -->
+                <div class="  container lg:w-[27rem] relative ">
+
+
+                    <!-- prev -->
+                    <div
+                        class="prev flex items-center justify-center h-10 w-10 bg-white rounded-3xl absolute top-[45%] -left-6 ">
+                        <i class="fa fa-chevron-left hover:text-orangeRed" aria-hidden="true"></i>
+                    </div>
+                    <!-- prev -->
+
+
+                    <div class="image image-container"> <img class=" rounded-2xl" src="./images/image-product-1.jpg"
+                            alt="image-product-1">
+                    </div>
+                    <div class="image hidden"><img class="rounded-2xl " src="./images/image-product-2.jpg"
+                            alt="image-product-2"></div>
+                    <div class="image hidden"> <img class=" rounded-2xl " src="./images/image-product-3.jpg"
+                            alt="image-product-3"></div>
+                    <div class="image"> <img class="rounded-2xl hidden" src="./images/image-product-4.jpg"
+                            alt="image-product-4"></div>
+
+                    <!-- next -->
+                    <div
+                        class="next flex items-center justify-center h-10 w-10 bg-white rounded-3xl  absolute -right-6 bottom-[45%] ">
+                        <i class="fa fa-chevron-right hover:text-orangeRed" aria-hidden="true"></i>
+
+                    </div>
+                    <!-- next -->
+
+                </div>
+                <!-- thumbnails -->
+                <div class="thumbnail images hidden lg:flex items-center justify-between gap-7 ">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail"
+                        class="img w-[5.7rem] h-[5.7rem] rounded-xl border-2 border-[#FF7D1A] ">
+                    <img src="./images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail"
+                        class=" img w-[5.7rem]  h-[5.7rem] rounded-xl border-2 border-[#FF7D1A] ">
+                    <img src="./images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail"
+                        class="img w-[5.7rem]  h-[5.7rem] rounded-xl border-2 border-[#FF7D1A] hover:opacity-50">
+                    <img src="./images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail"
+                        class="img  w-[5.7rem]  h-[5.7rem] rounded-xl border-2 border-[#FF7D1A] hover:opacity-50">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

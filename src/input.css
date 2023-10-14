@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-shadow {
+  border-radius: 10px;
+  background: #ff7d1a;
+  box-shadow: 0px 8px 10px 0px #ffede0;
+  padding: 17px 70px;
+}
+
+.cartStyle {
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 2px solid #f7f8fd;
+}
+
+.show {
+  display: flex;
+  transition: right 0.9s ease-in-out; /* Add a transition for smooth sliding */
+  animation: slideIn 0.5s forwards;
+}
+
+.open {
+  display: flex;
+}
+
+@keyframes slideIn {
+  from {
+    right: -300px; /* Start off-screen */
+  }
+  to {
+    right: 0; /* Slide in to the screen */
+  }
+}
+
+.drop-down:hover .drop-down-items {
+  display: block;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
